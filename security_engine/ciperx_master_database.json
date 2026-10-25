@@ -1,0 +1,137 @@
+[
+    {
+        "case_id": "CPX-2026-002",
+        "case_title": "Nexus Silverline Wire Fraud",
+        "category": "Financial Fraud & Money Laundering",
+        "status": "Under Investigation",
+        "lead_officer": "Insp. M. Khan",
+        "entities": [
+            {
+                "entity_id": "EVD-201",
+                "entity_type": "Person",
+                "name": "Sameer Qureshi",
+                "phone": "+91 98201 44521",
+                "is_honeytoken": false
+            },
+            {
+                "entity_id": "EVD-202",
+                "entity_type": "Organization",
+                "name": "Silverline Escrow Advisory Ltd",
+                "is_honeytoken": false
+            },
+            {
+                "entity_id": "EVD-203",
+                "entity_type": "Financial_Transaction",
+                "name": "SWIFT Wire #SW-44129 ($120,000)",
+                "is_honeytoken": false
+            },
+            {
+                "entity_id": "EVD-204",
+                "entity_type": "Person",
+                "name": "Vikram Sethi",
+                "phone": "+91 98112 33490",
+                "is_honeytoken": false
+            },
+            {
+                "entity_id": "SUS-CANARY-001",
+                "entity_type": "Person",
+                "name": "Ghost Syndicate Leader",
+                "phone": "+91 99999 00000",
+                "is_honeytoken": true
+            }
+        ],
+        "relationships": [
+            {
+                "relation_id": "REL-001",
+                "source_id": "EVD-201",
+                "target_id": "EVD-202",
+                "relationship_type": "Beneficial owner of"
+            },
+            {
+                "relation_id": "REL-002",
+                "source_id": "EVD-202",
+                "target_id": "EVD-203",
+                "relationship_type": "Transferred funds to"
+            },
+            {
+                "relation_id": "REL-003",
+                "source_id": "EVD-203",
+                "target_id": "EVD-204",
+                "relationship_type": "Liquidated by cash to"
+            }
+        ]
+    },
+    {
+        "case_id": "CPX-2026-008",
+        "case_title": "Operation Red Mercury: Cross-Border Narcotics & Hawala Ring",
+        "category": "Narcotics Smuggling & Hawala Financing",
+        "status": "Under Investigation",
+        "lead_officer": "Insp. R. Deshmukh",
+        "entities": [
+            {
+                "entity_id": "EVD-301",
+                "entity_type": "Person",
+                "name": "Farhan 'Kabir' Memon",
+                "phone": "+91 98230 11982",
+                "is_honeytoken": false
+            },
+            {
+                "entity_id": "EVD-302",
+                "entity_type": "Organization",
+                "name": "Oceanic Freight Logistics Pvt Ltd",
+                "is_honeytoken": false
+            },
+            {
+                "entity_id": "EVD-303",
+                "entity_type": "Vehicle",
+                "name": "Tata Signa Container Truck",
+                "is_honeytoken": false
+            },
+            {
+                "entity_id": "EVD-304",
+                "entity_type": "Location",
+                "name": "Warehouse 14B, Bhiwandi",
+                "is_honeytoken": false
+            },
+            {
+                "entity_id": "EVD-305",
+                "entity_type": "Financial_Transaction",
+                "name": "Angadia Cash Drop Token #ANG-9921",
+                "is_honeytoken": false
+            },
+            {
+                "entity_id": "INF-DECOY-999",
+                "entity_type": "Person",
+                "name": "Undercover Informant Alpha",
+                "phone": "+91 98000 11111",
+                "is_honeytoken": true
+            }
+        ],
+        "relationships": [
+            {
+                "relation_id": "REL-101",
+                "source_id": "EVD-301",
+                "target_id": "EVD-302",
+                "relationship_type": "Majority Shareholder of"
+            },
+            {
+                "relation_id": "REL-102",
+                "source_id": "EVD-302",
+                "target_id": "EVD-303",
+                "relationship_type": "Registered owner of"
+            },
+            {
+                "relation_id": "REL-103",
+                "source_id": "EVD-303",
+                "target_id": "EVD-304",
+                "relationship_type": "Unloaded contraband at"
+            },
+            {
+                "relation_id": "REL-104",
+                "source_id": "EVD-301",
+                "target_id": "EVD-305",
+                "relationship_type": "Authorized hawala settlement to"
+            }
+        ]
+    }
+]

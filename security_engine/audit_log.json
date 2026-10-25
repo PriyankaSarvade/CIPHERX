@@ -1,0 +1,11 @@
+[
+    {
+        "timestamp": "2026-10-25T08:33:12.696598",
+        "investigator_id": "Officer_Demo",
+        "action": "CRITICAL_INSIDER_THREAT_DETECTED",
+        "resource_id": "SUS-CANARY-001",
+        "status": "DELETE",
+        "previous_hash": "GENESIS_HASH_00000000000000000000",
+        "current_hash": "e633869bdfbbaf95c15c051e450cf782560b3c7bd792031f94f21e71b5e5ad32"
+    }
+]

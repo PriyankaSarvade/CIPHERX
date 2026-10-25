@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+*.py[c|o]
+temp_uploads/
+*.jpg
+*.jpeg
+*.png
+*.h5
+.deepface/
+.vscode/
